@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/assets/,classpath:/public/,file:${file.upload}
+
+server:
+  port: 8082
+
+file:
+  upload: /Users/leonard/uploadTest/
+
+
